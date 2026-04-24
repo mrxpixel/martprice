@@ -1,0 +1,23 @@
+name: martprice
+description: On-device Gemma 4 E2B validation harness for a local mart price comparison app.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: '>=3.24.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_gemma: ^0.12.0
+  path_provider: ^2.1.4
+  device_info_plus: ^11.0.0
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fixtures/

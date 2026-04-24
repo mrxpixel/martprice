@@ -1,0 +1,25 @@
+{
+  "user_cluster": "아산시 배방읍",
+  "results": [
+    {
+      "mart_name": "아산마트",
+      "item_display_name": "폰타나 나폴리 토마토 미트 파스타소스",
+      "regular_price": 4200,
+      "local_currency_rate": 0.20,
+      "local_currency_price": 3360,
+      "distance_meters": 450,
+      "payment_currency": "아산사랑상품권",
+      "updated_at": "2026-04-22"
+    },
+    {
+      "mart_name": "신선마트",
+      "item_display_name": "오뚜기 프레스코 미트 스파게티 소스",
+      "regular_price": 3900,
+      "local_currency_rate": 0.20,
+      "local_currency_price": 3120,
+      "distance_meters": 800,
+      "payment_currency": "아산사랑상품권",
+      "updated_at": "2026-04-22"
+    }
+  ]
+}

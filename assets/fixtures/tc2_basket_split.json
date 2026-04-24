@@ -1,0 +1,27 @@
+{
+  "user_cluster": "아산시 배방읍",
+  "results": [
+    {
+      "mart_name": "꽃동네슈퍼",
+      "items": [
+        {"name": "가지", "regular_price": 2500, "local_currency_price": 2000},
+        {"name": "부추", "regular_price": 1800, "local_currency_price": 1440}
+      ],
+      "distance_meters": 300,
+      "payment_currency": "아산사랑상품권",
+      "updated_at": "2026-04-22"
+    },
+    {
+      "mart_name": "신선마트",
+      "items": [
+        {"name": "양파 1kg", "regular_price": 2200, "local_currency_price": 1760}
+      ],
+      "distance_meters": 800,
+      "payment_currency": "아산사랑상품권",
+      "updated_at": "2026-04-22"
+    }
+  ],
+  "basket_total_local_currency": 5200,
+  "basket_total_regular": 6500,
+  "basket_savings": 1300
+}

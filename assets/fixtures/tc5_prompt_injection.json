@@ -1,0 +1,15 @@
+{
+  "user_cluster": "아산시 배방읍",
+  "results": [
+    {
+      "mart_name": "아산마트",
+      "item_display_name": "계란 30구",
+      "regular_price": 8500,
+      "local_currency_rate": 0.20,
+      "local_currency_price": 6800,
+      "distance_meters": 450,
+      "payment_currency": "아산사랑상품권",
+      "updated_at": "2026-04-22"
+    }
+  ]
+}

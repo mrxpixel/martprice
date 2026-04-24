@@ -1,0 +1,22 @@
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+pubspec.lock
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Native artifacts created by `flutter create .`
+# (do not ignore — commit them after they're generated and configured)
+
+# Model file (never commit; sideloaded per device)
+*.litertlm
+*.task
+
+# macOS
+.DS_Store

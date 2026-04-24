@@ -1,0 +1,14 @@
+{
+  "user_cluster": "아산시 배방읍",
+  "suggested_bundle": {
+    "mart_name": "꽃동네슈퍼",
+    "bundle_name": "제육볶음 재료 세트",
+    "bundle_description": "4인분",
+    "items": ["돼지고기 600g", "양파 2개", "당근 1개", "고추장 1큰술", "대파", "마늘"],
+    "regular_price": 12000,
+    "local_currency_price": 9600,
+    "distance_meters": 300,
+    "payment_currency": "아산사랑상품권",
+    "updated_at": "2026-04-22"
+  }
+}
