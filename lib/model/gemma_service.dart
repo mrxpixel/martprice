@@ -29,7 +29,7 @@ class GemmaService {
   GemmaService._();
   static final GemmaService instance = GemmaService._();
 
-  static const String _modelFileName = 'gemma-4-E2B-it.litertlm';
+  static const String _modelFileName = 'Gemma3-1B-IT_multi-prefill-seq_q4_ekv2048.task';
 
   InferenceModel? _model;
   bool _loading = false;
