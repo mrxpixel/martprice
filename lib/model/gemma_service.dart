@@ -59,7 +59,7 @@ class GemmaService {
           .fromFile(path)
           .install();
       _model = await FlutterGemma.getActiveModel(
-        maxTokens: 2048,
+        maxTokens: 1024,
         preferredBackend: PreferredBackend.cpu,
       );
     } finally {
