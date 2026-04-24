@@ -55,12 +55,12 @@ class GemmaService {
     _loading = true;
     try {
       final path = await resolveModelPath();
-      final plugin = FlutterGemmaPlugin.instance;
-      await plugin.modelManager.setModelPath(path);
-      _model = await plugin.createModel(
-        modelType: ModelType.gemmaIt,
-        preferredBackend: PreferredBackend.gpu,
+      await FlutterGemma.installModel(modelType: ModelType.gemmaIt)
+          .fromFile(path)
+          .install();
+      _model = await FlutterGemma.getActiveModel(
         maxTokens: 4096,
+        preferredBackend: PreferredBackend.gpu,
       );
     } finally {
       _loading = false;
@@ -84,7 +84,7 @@ class GemmaService {
     final stopwatch = Stopwatch()..start();
     try {
       final composed = '$kSystemPrompt\n\n$userMessage';
-      await session.addQueryChunk(Message(text: composed, isUser: true));
+      await session.addQueryChunk(Message.text(text: composed, isUser: true));
       final text = await session.getResponse();
       stopwatch.stop();
       return InferenceResult(

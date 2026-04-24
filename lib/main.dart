@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gemma/flutter_gemma.dart';
 
 import 'freeform/freeform_screen.dart';
 import 'model/gemma_service.dart';
 import 'testharness/harness_screen.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await FlutterGemma.initialize();
   runApp(const MartPriceApp());
 }
 
