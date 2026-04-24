@@ -75,24 +75,24 @@ class GemmaService {
       throw StateError('Model not loaded. Call load() first.');
     }
 
-    final session = await model.createSession(
+    final chat = await model.createChat(
       temperature: 0.0,
       randomSeed: 1,
       topK: 1,
+      systemInstruction: kSystemPrompt,
     );
 
     final stopwatch = Stopwatch()..start();
     try {
-      final composed = '$kSystemPrompt\n\n$userMessage';
-      await session.addQueryChunk(Message.text(text: composed, isUser: true));
-      final text = await session.getResponse();
+      await chat.addQueryChunk(Message.text(text: userMessage, isUser: true));
+      final text = await chat.generateChatResponse();
       stopwatch.stop();
       return InferenceResult(
-        text: text.trim(),
+        text: text.toString().trim(),
         latencyMs: stopwatch.elapsedMilliseconds,
       );
     } finally {
-      await session.close();
+      await chat.close();
     }
   }
 
